@@ -1,83 +1,154 @@
-🧠 AI-Based Early Diabetes Detection System
+# 🧠 AI-Based Early Diabetes Detection System
 
-A modern, responsive web application that uses medical input data to predict the risk of diabetes at an early stage using AI-based logic. The system generates a detailed health report, provides basic prescription suggestions, and recommends nearby hospitals based on user location.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-Enabled-blue?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-Fast%20Build-purple?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-🚀 Features
-📥 Medical Data Input Form
-Age, BMI, Glucose, Blood Pressure, Insulin, Skin Thickness, Pregnancies
-Input validation with realistic ranges
-🤖 AI-Based Risk Prediction
-Classifies risk as Low / Medium / High
-Displays probability and insights
-📊 Report Generation
-Generates a professional medical report
-Includes inputs, results, and recommendations
-📄 Downloadable as PDF
-🩺 Prescription Generator
-Lifestyle suggestions
-Diet recommendations
-Exercise guidance
-📍 Hospital Recommendation System
-Uses Geolocation API
-Suggests nearby hospitals
-🌙 Dual Theme Support
-Light & Dark mode toggle
-Persistent theme using localStorage
-📱 Fully Responsive
-Mobile-first design
-Works across all devices
-⚙️ Tech Stack
-Frontend: React + TypeScript
-Build Tool: Vite
-Styling: Tailwind CSS
-State Management: React Hooks
-PDF Generation: jsPDF / html2canvas (or equivalent)
-Icons: Lucide / FontAwesome
-📂 Project Structure
+---
+
+## 🚀 Project Overview
+
+- AI-powered web application for early diabetes detection
+- Uses medical input parameters to predict risk level
+- Generates downloadable PDF reports
+- Provides prescription suggestions and hospital recommendations
+- Fully responsive and modern UI
+
+---
+
+## 🎯 Key Features
+
+### 📥 Medical Input System
+
+- Age
+- BMI
+- Glucose Level
+- Blood Pressure
+- Insulin Level
+- Skin Thickness
+- Number of Pregnancies
+- Input validation (numeric + realistic ranges)
+
+---
+
+### 🤖 AI Prediction Engine
+
+- Low Risk
+- Medium Risk
+- High Risk
+- Probability-based output
+- Instant analysis of user data
+
+---
+
+### 📊 Report Generation
+
+- User input summary
+- Prediction results
+- AI insights
+- Recommendations
+- Download report as PDF
+
+---
+
+### 🩺 Prescription Generator
+
+- Lifestyle improvements
+- Diet recommendations
+- Exercise guidance
+
+---
+
+### 📍 Hospital Recommendation System
+
+- Detect user location
+- Suggest nearby hospitals
+- Display distance and details
+
+---
+
+### 🌙 Dual Theme Support
+
+- Light mode
+- Dark mode
+- Toggle switch
+- Saved preference using localStorage
+
+---
+
+### 📱 Fully Responsive Design
+
+- Mobile-first approach
+- Tablet-friendly layout
+- Desktop optimized
+
+---
+
+### ✨ UI/UX Enhancements
+
+- Smooth animations and transitions
+- Loading states
+- Toast notifications
+- Modern typography
+- Icon integration
+
+---
+
+## ⚙️ Tech Stack
+
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- jsPDF / html2canvas
+- Geolocation API
+- Lucide / FontAwesome
+
+---
+
+## 📂 Project Structure
 src/
-│── components/     # Reusable UI components
-│── pages/          # Main pages (Home, Dashboard, etc.)
-│── utils/          # Helper functions
-│── assets/         # Images & icons
-│── App.tsx         # Main app component
-│── main.tsx        # Entry point
-🛠️ Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/diabetes-detection.git
-cd diabetes-detection
-2. Install dependencies
-npm install
-3. Run development server
-npm run dev
-4. Build for production
-npm run build
-🌐 Usage
-Open the app in your browser
-Enter medical details in the form
-Click “Execute Model Run”
-View:
-Risk prediction
-AI-generated report
-Prescription suggestions
-Nearby hospitals
-Download the report as PDF
-⚠️ Disclaimer
+├── components/
+├── pages/
+├── utils/
+├── assets/
+├── hooks/
+├── App.tsx
+└── main.tsx
 
-This system provides AI-based predictions and recommendations.
-It is not a substitute for professional medical advice. Always consult a qualified doctor for medical decisions.
 
-🎨 Customization
-Update styles in Tailwind config
-Modify prediction logic in utils/
-Integrate real ML model via API (Python/Node backend)
-🔮 Future Improvements
-Real ML model integration
-User authentication & history tracking
-Advanced analytics dashboard
-Integration with wearable health devices
-🙌 Acknowledgements
-React & Vite community
-Open-source libraries used in this project
-🔗 Author
+---
 
-Made by Abhijeet Sharma
+## 🌐 Usage
+
+- Enter medical data
+- Click "Execute Model Run"
+- View risk prediction
+- Download report as PDF
+- Check nearby hospitals
+
+---
+
+## ⚠️ Disclaimer
+
+- This system provides AI-based predictions only
+- Not intended for medical diagnosis or treatment
+- Always consult a qualified healthcare professional
+
+---
+
+## 🔮 Future Improvements
+
+- Real ML model integration
+- User authentication system
+- Advanced analytics dashboard
+- Cloud deployment
+
+---
+
+## 👨‍💻 Author
+
+- Made by Abhijeet Sharma

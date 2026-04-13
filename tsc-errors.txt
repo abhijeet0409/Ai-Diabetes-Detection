@@ -1,0 +1,2 @@
+src/pages/Dashboard.tsx(217,41): error TS7006: Parameter 'insight' implicitly has an 'any' type.
+src/pages/Dashboard.tsx(217,50): error TS7006: Parameter 'idx' implicitly has an 'any' type.

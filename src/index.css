@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-medical-primary: #0b5c92;
+  --color-medical-secondary: #1282c2;
+  --color-medical-accent: #1ebd95;
+  --color-medical-bg-light: #f8fafc;
+  --color-medical-bg-dark: #090e17;
+  --color-medical-surface-light: #ffffff;
+  --color-medical-surface-dark: #111827;
+  --color-medical-text-light: #0f172a;
+  --color-medical-text-dark: #f8fafc;
+  
+  --animate-blob: blob 7s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
+/* Light / Dark Mode support */
+:root {
+  --bg-color: var(--color-medical-bg-light);
+  --surface-color: var(--color-medical-surface-light);
+  --text-main: var(--color-medical-text-light);
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+html.dark {
+  --bg-color: var(--color-medical-bg-dark);
+  --surface-color: var(--color-medical-surface-dark);
+  --text-main: var(--color-medical-text-dark);
+  --text-muted: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Glowing inputs */
+.glow-input:focus {
+  box-shadow: 0 0 0 2px rgba(30, 189, 149, 0.3), 0 0 15px rgba(30, 189, 149, 0.2);
+  border-color: #1ebd95;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 10px;
+}

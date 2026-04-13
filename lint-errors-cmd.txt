@@ -1,0 +1,25 @@
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\context\ThemeContext.tsx
+  19:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\context\ThemeContext.tsx:19:7
+  17 |     const storedTheme = localStorage.getItem('app-theme') as Theme | null;
+  18 |     if (storedTheme) {
+> 19 |       setTheme(storedTheme);
+     |       ^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  21 |       setTheme('dark');
+  22 |     }  react-hooks/set-state-in-effect
+  43:17  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-refresh/only-export-components
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\services\pdfService.ts
+  39:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 3 problems (3 errors, 0 warnings)
+

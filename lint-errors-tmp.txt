@@ -1,0 +1,23 @@
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\pages\Dashboard.tsx
+   11:15  error  'MedicalData' is defined but never used       @typescript-eslint/no-unused-vars
+   11:28  error  'PredictionResult' is defined but never used  @typescript-eslint/no-unused-vars
+   38:31  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  158:32  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\pages\PredictionForm.tsx
+  41:16  error  Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\HP\OneDrive\Desktop\8th_sem_Project\diabetes-detection-app\src\pages\PredictionForm.tsx:41:16
+  39 |          const currentHistory = JSON.parse(localStorage.getItem(historyKey) || '[]');
+  40 |          const newEntry = {
+> 41 |            id: Date.now().toString(),
+     |                ^^^^^^^^^^ Cannot call impure function
+  42 |            date: new Date().toISOString(),
+  43 |            inputData: data,
+  44 |            prediction: result  react-hooks/purity
+
+✖ 5 problems (5 errors, 0 warnings)
+
